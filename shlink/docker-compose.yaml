@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      # DEFAULT_DOMAIN: pierceekkman.com
+      DEFAULT_DOMAIN: pierceekkman.com
       SHELL_VERBOSITY: 3
       IS_HTTPS_ENABLED: "false"
       GEOLITE_LICENSE_KEY: kjh23ljkbndskj345
