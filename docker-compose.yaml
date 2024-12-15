@@ -4,8 +4,8 @@ services:
     image: wordpress
     container_name: wordpress
     restart: always
-#    ports:
-#      - 80:80
+    ports:
+      - 80:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
@@ -23,25 +23,25 @@ services:
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress_1246
       MYSQL_ROOT_PASSWORD: wordpress_124690
-#    ports:
-#      - 3306:3306
+    ports:
+      - 3306:3306
     volumes:
       - db:/var/lib/mysql
 
-  nginx:
-    image: nginx:latest
-    container_name: nginx
-    restart: always
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - nginx_data:/etc/nginx/
+  # nginx:
+  #   image: nginx:latest
+  #   container_name: nginx
+  #   restart: always
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - nginx_data:/etc/nginx/
 
 volumes:
   wordpress:
     name: linux_wordpress
   db:
     name: linux_db
-  nginx_data:
-    name: linux_nginx_data
+  # nginx_data:
+  #   name: linux_nginx_data
