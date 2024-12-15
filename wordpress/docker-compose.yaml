@@ -1,7 +1,8 @@
 services:
 
   wordpress:
-    image: wordpress
+    # image: wordpress
+    image: wordpress:php8.3-fpm-alpine
     container_name: wordpress
     restart: always
     # ports:
