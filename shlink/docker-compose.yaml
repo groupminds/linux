@@ -7,7 +7,7 @@ services:
     environment:
       DEFAULT_DOMAIN: pierceekkman.com
       SHELL_VERBOSITY: 3
-      IS_HTTPS_ENABLED: "false"
+      IS_HTTPS_ENABLED: "true"
       GEOLITE_LICENSE_KEY: kjh23ljkbndskj345
       DB_DRIVER: mysql
       DB_USER: root
