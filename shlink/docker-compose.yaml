@@ -8,7 +8,7 @@ services:
       DEFAULT_DOMAIN: pierceekkman.com
       SHELL_VERBOSITY: 3
       IS_HTTPS_ENABLED: "false"
-      GEOLITE_LICENSE_KEY: kjh2335ljkbndskj389
+      GEOLITE_LICENSE_KEY: kjh23ljkbndskj345
       DB_DRIVER: mysql
       DB_USER: root
       DB_PASSWORD: wordpress_124690
