@@ -6,7 +6,7 @@ services:
     container_name: wordpress
     restart: always
     # ports:
-    #   - 80:80
+    #   - 9000:9000
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
