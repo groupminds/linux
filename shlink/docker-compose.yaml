@@ -12,6 +12,6 @@ services:
       DB_DRIVER: mysql
       DB_USER: root
       DB_PASSWORD: wordpress_124690
-      # DB_HOST: 5.161.196.242
-      DB_HOST: db
+      DB_HOST: 5.161.196.242
+      # DB_HOST: db
     restart: always
