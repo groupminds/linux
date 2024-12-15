@@ -1,7 +1,7 @@
 services:
   shlink:
     image: shlinkio/shlink:stable
-    container_name: my_shlink
+    container_name: shlink-server
     ports:
       - "8080:8080"
     environment:
