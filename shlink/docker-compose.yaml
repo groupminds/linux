@@ -22,9 +22,15 @@ services:
     container_name: shlink-web-client
     ports:
       - "8089:8080"
-    environment:
-      - SHLINK_API_URL=http://shlink-server:8080
-      - SHLINK_SERVER_API_KEY=9376fe42-2581-47b4-b70d-f3b45af276e5
-      - BASE_PATH=/admin
+    volumes:
+      - shlink_web_data:/usr/share/nginx/html/
+    # environment:
+    #   - SHLINK_API_URL=http://shlink-server:8080
+    #   - SHLINK_SERVER_API_KEY=9376fe42-2581-47b4-b70d-f3b45af276e5
+    #   - BASE_PATH=/admin
     restart: always
 
+volumes:
+  shlink_web_data:
+    external: true
+    name: shlink_web_data
