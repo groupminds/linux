@@ -13,7 +13,7 @@ services:
       DB_USER: root
       DB_PASSWORD: wordpress_124690
       DB_HOST: 5.161.196.242
-      BASE_PATH: /s
+      BASE_PATH: /shlinkapi
       # DB_HOST: db
     restart: always
 
