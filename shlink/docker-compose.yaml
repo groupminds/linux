@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DEFAULT_DOMAIN: pierceekkman.com
+      # DEFAULT_DOMAIN: pierceekkman.com
       SHELL_VERBOSITY: 3
       IS_HTTPS_ENABLED: "false"
       GEOLITE_LICENSE_KEY: kjh23ljkbndskj345
@@ -13,6 +13,7 @@ services:
       DB_USER: root
       DB_PASSWORD: wordpress_124690
       DB_HOST: 5.161.196.242
+      BASE_PATH: /s
       # DB_HOST: db
     restart: always
 
@@ -20,8 +21,9 @@ services:
     image: shlinkio/shlink-web-client
     container_name: shlink-web-client
     ports:
-      - "80:8080"  # 映射端口 8000 到容器的 8080
-    # volumes:
-    #   - ${PWD}/my-config/:/usr/share/nginx/html/conf.d/  # 挂载本地的配置文件
+      - "8089:8080"
+    environment:
+      - SHLINK_API_URL=http://shlink-server:8080
+      - BASE_PATH=/admin
     restart: always
 
