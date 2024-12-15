@@ -40,5 +40,8 @@ services:
 
 volumes:
   wordpress:
+    name: linux_wordpress
   db:
+    name: linux_db
   nginx_data:
+    name: linux_nginx_data
