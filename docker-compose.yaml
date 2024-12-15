@@ -20,6 +20,7 @@ services:
       MYSQL_DATABASE: wordpress_db
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress_1246
+      MYSQL_ROOT_PASSWORD: wordpress_124690
     ports:
       - 3306:3306
     volumes:
