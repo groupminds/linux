@@ -40,8 +40,11 @@ services:
 
 volumes:
   wordpress:
+    external: true
     name: linux_wordpress
   db:
+    external: true
     name: linux_db
   # nginx_data:
+  #   external: true
   #   name: linux_nginx_data
