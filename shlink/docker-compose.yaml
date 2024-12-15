@@ -24,6 +24,7 @@ services:
       - "8089:8080"
     environment:
       - SHLINK_API_URL=http://shlink-server:8080
+      - SHLINK_SERVER_API_KEY=9376fe42-2581-47b4-b70d-f3b45af276e5
       - BASE_PATH=/admin
     restart: always
 
